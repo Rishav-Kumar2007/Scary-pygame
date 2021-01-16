@@ -1,0 +1,18 @@
+import pygame
+from time import sleep
+pygame.init()
+window = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+pygame.mixer.init()
+pygame.mixer.music.load('normal.mp3')
+pygame.mixer.music.play()
+image1 = pygame.image.load('nature.jpg')
+window.blit(image1, (0,0))
+pygame.display.update()
+sleep(3)
+pygame.mixer.music.load('scream.mp3')
+pygame.mixer.music.play()
+#sleep(1)
+image = pygame.image.load('none.jpg')
+window.blit(image, (0,0))
+pygame.display.update()
+sleep(2)
